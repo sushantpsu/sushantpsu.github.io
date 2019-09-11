@@ -1,1 +1,432 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<title>Resource.PCAWG</title>
+<meta charset="iso-8859-1">
+
+<link rel="stylesheet" href="bootstrap.css" type="text/css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130963638-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130963638-1');
+</script>
+<!-- <link rel="stylesheet" href="styles/layout.css" type="text/css">-->
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<header id="header" class="clear">
+  <!--  <div id="hgroup">
+  <img src="images/PsychENCODE_banner-2.jpg" align = "middle" width ="100%" height="100%" alt="">
+ <img src="Brain.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+  </div>-->
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+    <div style="color:white">PCAWG.</div><a class="navbar-brand" href="https://dcc.icgc.org/pcawg">gersteinlab.org</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav">
+          <!-- <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#Annotations">PCAWG Data Context</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Derived">Derived Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Tools">Tools & Codes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Primary">Primary Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<body style="padding-top: 70px;">
+
+<div class="container shadow-sm p-3 mb-5 bg-white rounded" >
+
+<!-- content -->
+<div class="card">
+
+    <!-- content body -->
+     <section id="shout">
+      <div class="card-header"><h1 class="text-center">PCAWG Passenger Mutation Analysis</h1></div>
+      <div class="card-body">
+        <div class="row">
+          
+        <figure class="text-center">
+            <img src="paperE_schematic.png" class="figure-img img-fluid rounded" width="70%" height="70%" alt="">
+        </figure>
+        
+
+        </div>
+</div>
+
+</section>
+</div>
+
+
+<br><br><br>
+<!-- article 4 -->
+<div class="card">
+
+  <div class="card-header">
+    <h1 id="Annotations" style="padding-top: 100px; margin-top: -100px;">PCAWG Data Context</h1>
+  </div>
+  <div class="card-body">
+  <p>List of genomic element definitions and data context applied to annotate PCAWG mutations</p>
+  <!-- article 1 -->
+    <h3>PCAWG-specific Annotations</h3>
+
+  <!--  <img src="images/demo/80x80.gif" alt=""> -->
+
+    <ol>
+      <li><p>Genomic elements:</p>
+        <ul>
+          <li><p>CDS: <a href="Datasets/Annotations/elements/gc19_pc.cds.bed" download> gc19_pc.cds.bed  <span class="badge badge-light">bed</span><span class="badge badge-light">3.8MB</span></a></p>
+          </li>
+          <li><p>Splice Sites: <a href="Datasets/Annotations/elements/gc19_pc.ss.bed" download> gc19_pc.ss.bed  <span class="badge badge-light">bed</span><span class="badge badge-light">5.0MB</span></a></p>
+          </li>
+          <li><p>Promoters: <a href="Datasets/Annotations/elements/gc19_pc.prom.bed" download> gc19_pc.prom.bed  <span class="badge badge-light">bed</span><span class="badge badge-light">3.1MB</span></a></p>
+          </li>
+          <li><p>5'UTR: <a href="Datasets/Annotations/elements/gc19_pc.5utr.bed" download> gc19_pc.5utr.bed  <span class="badge badge-light">bed</span><span class="badge badge-light">2.3MB</span></a></p>
+          </li>
+          <li><p>3'UTR: <a href="Datasets/Annotations/elements/gc19_pc.3utr.bed" download> gc19_pc.3utr.bed  <span class="badge badge-light">bed</span><span class="badge badge-light">2.1MB</span></a></p>
+          </li>
+          <li><p>Enhancers: <a href="Datasets/Annotations/elements/enhancers.bed" download> enhancers.bed  <span class="badge badge-light">bed</span><span class="badge badge-light">3.2MB</span></a></p>
+          </li>
+          <li><p>nonCodingRNAs: <a href="Datasets/Annotations/elements/ncRNAs.zip" download> ncRNAs.zip  <span class="badge badge-light">zip</span><span class="badge badge-light">4KB</span></a></p>
+          </li>
+          <li><p>DHS: <a href="Datasets/Annotations/DHS.info.txt" download> ncRNAs.zip  <span class="badge badge-light">zip</span><span class="badge badge-light">1.2GB</span></a></p>
+          </li>
+        </ul>
+      </li>
+      <li><p>Gene List Categories:</p>
+        <ul>
+          <li>
+            <p>Eseential Genes: <a href="Datasets/Annotations/categories/essentialGene.list.txt" download> essentialGene_list.txt<span class="badge badge-light">txt</span><span class="badge badge-light">376KB</span></a></p>
+          </li>
+          <li>
+            <p>Immune Response Genes: <a href="Datasets/Annotations/categories/immuneResponseGene.list.txt" download> immuneResponseGene_list.txt<span class="badge badge-light">txt</span><span class="badge badge-light">32KB</span></a></p>
+          </li>
+          <li>
+            <p>DNA repair Genes: <a href="Datasets/Annotations/categories/dnaRepairGene.list.txt" download> dnaRepairGene_list.txt<span class="badge badge-light">txt</span><span class="badge badge-light">4KB</span></a></p>
+          </li>
+          <li>
+            <p>Metabolic Genes: <a href="Datasets/Annotations/categories/Metabolic_Genes_RCT.txt" download>Metabolic_Genes_RCT.txt<span class="badge badge-light">txt</span><span class="badge badge-light">12KB</span></a></p>
+          </li>
+          <li>
+            <p>Cancer Pathway Genes: <a href="Datasets/Annotations/categories/cancerPathwayGene_list.txt" download>cancerPathwayGene_list.txt<span class="badge badge-light">txt</span><span class="badge badge-light">4KB</span></a></p>
+          </li>
+          <li>
+            <p>non-Essential Genes: <a href="Datasets/Annotations/categories/nonEssentialGene_list.txt" download>nonEssentialGene_list.txt<span class="badge badge-light">txt</span><span class="badge badge-light">1.4MB</span></a></p>
+          </li>
+          <li>
+            <p>cell Cycle Genes: <a href="Datasets/Annotations/categories/cellCycleGene_list" download> cellCycleGene_list.txt<span class="badge badge-light">txt</span><span class="badge badge-light">4KB</span></a></p>
+          </li>
+
+       </ul>
+      </li>
+     
+  </ol>
+</div>
+</div>    
+  
+
+<!-- ********************************************************************************************************************************* -->
+<!-- article 3 -->
+<br><br><br>
+
+
+<div class="card">
+      <article class="one_fourth">
+  <div class="card-header"> <h1 id="Derived" style="padding-top: 100px; margin-top: -100px;">Derived Datasets </h1></div>
+  <div class="card-body">
+
+
+      <article class="one_fourth">
+
+        
+        <p>Access to all files tagged as "controlled" is login-secured. These controlled dataset used in this publication are accessible to the research community as described under <a href="https://docs.icgc.org/pcawg/data/#data-repositories" download>private data download guidleine</a></p>
+        <!-- <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Raw Data Description</h3>
+
+          <p>Description of all datasets in different formats: <a href="https://www.synapse.org/#!Synapse:syn11969240">Description in .tsv format (link to www.synapse.org) &raquo;</a></p>
+        </article>
+        </section> -->
+        <!-- article 2 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>FunSeq ouput</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <p>FunSeq output for PCAWG mutations using PCAWG-specific data context(link to Synapse): <ul><li><a href="https://www.synapse.org/#!Synapse:syn15574565" target="_blank"> PCAWG funseq output <span class="badge badge-danger">controlled</span></a></p></li></ul>
+
+        </article>
+        </section>
+
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>ALoFT ouput</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <p>ALoFt output for putative loss-of-function mutations in PCAWG (link to Synapse): <ul><li><a href="https://www.synapse.org/#!Synapse:syn12176699" target="_blank"> PCAWG aloft output <span class="badge badge-danger">controlled</span></a></p></li></ul>
+
+        </article>
+        </section>
+
+
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>TF motif gain or loss enrichment files</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+              <p>P-value associated with gain-of-motif events in PCAWG <i>(uniform background)</i>: <ul><li><a href="Datasets/Derived/TFenrichment/p-values_PCAWG_paperE_SNV_Motif_gain_geomic_abundance_uniform_background.txt" download>p-values_PCAWG_paperE_SNV_Motif_gain_geomic_abundance_uniform_background.txt<span class="badge badge-light">txt</span><span class="badge badge-light">116KB</span></a></p></li></ul>
+            </li>
+            <li>
+              <p>P-value associated with loss-of-motif events in PCAWG <i>(uniform background)</i>: <ul><li><a href="Datasets/Derived/TFenrichment/p-values_PCAWG_paperE_SNV_Motif_loss_geomic_abundance_uniform_background.txt" download>p-values_PCAWG_paperE_SNV_Motif_loss_geomic_abundance_uniform_background.txt<span class="badge badge-light">txt</span><span class="badge badge-light">252KB</span></a></p></li></ul>
+            </li>
+            <li>
+              <p>P-value associated with gain-of-motif events in PCAWG <i>(signature-corrected background)</i>: <ul><li><a href="Datasets/Derived/TFenrichment/p-values_PCAWG_paperE_SNV_Motif_gain_simulated_mut_background.txt" download>p-values_PCAWG_paperE_SNV_Motif_gain_simulated_mut_background.txt<span class="badge badge-light">txt</span><span class="badge badge-light">96KB</span></a></p></li></ul>
+            </li>
+            <li>
+              <p>P-value associated with loss-of-motif events in PCAWG <i>(signature-corrected background)</i>: <ul><li><a href="Datasets/Derived/TFenrichment/p-values_PCAWG_paperE_SNV_Motif_loss_simulated_mut_background.txt" download>p-values_PCAWG_paperE_SNV_Motif_loss_simulated_mut_background.txt<span class="badge badge-light">txt</span><span class="badge badge-light">228KB</span></a></p></li></ul>
+            </li>
+
+
+          </ol>
+        </article>
+        </section>
+
+        <!-- article 3 -->
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Weak Drivers in PCAWG</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+              <p>List of weak driver elements in PCAWG: <ul><li><a href="Datasets/Derived/weakDriver/weak_drivers_95_CI_cutoff.xlsx" download>weak_drivers_pcawg.xlsx<span class="badge badge-light">xlsx</span><span class="badge badge-light">64KB</span></a></p></li></ul>
+            </li>
+            </ol>
+
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Randomized PCAWG mutations</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+              <p>Simulated mutations <i>(moatsim randomization)</i>: <ul><li><a href="https://www.synapse.org/#!Synapse:syn12177291" download>Covariate and signature corrected randomized mutations<span class="badge badge-danger">controlled</span></a></p></li></ul>
+            </li>
+            
+            <li>
+              <p>Simulated mutations <i>(broad randomization)</i>: <ul><li><a href="https://www.synapse.org/#!Synapse:syn12176718" download>Signature corrected randomized mutations<span class="badge badge-danger">controlled</span></a></p></li></ul>
+            </li>
+          </ol>
+
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>VAF-based heterogeneity scores</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+              <p>Coding mutations: <ul><li><a href="Datasets/Derived/MATHscore/coding.mathScore.tar.gz" download>coding.mathScore.tar.gz<span class="badge badge-light">tar.gz</span><span class="badge badge-light">64KB</span></a></p></li></ul>
+            </li>
+            
+            <li>
+              <p>nonCoding mutations: <ul><li><a href="Datasets/Derived/MATHscore/noncoding.mathScore.tar.gz" download>noncoding.mathScore.tar.gz<span class="badge badge-light">tar.gz</span><span class="badge badge-light">64KB</span></a></p></li></ul>
+            </li>
+            </ol> 
+
+        <section id="services" class="clear">
+        <article class="subtitle">
+          <h3>Signature Differences</h3>
+          <!-- <img src="images/IGV_ScreenShot_Peaks.png" alt=""> -->
+          <ol>
+            <li>
+              <p>SigProfiler based signature output: <ul><li><a href="Datasets/Derived/sigAnalysis/signatureInfo.high_neutral.sigProfileMatrix.txt" download>signatureInfo.high_neutral.sigProfileMatrix.txt<span class="badge badge-light">txt</span><span class="badge badge-light">16KB</span></a></p></li></ul>
+            </li>
+            
+            <li>
+              <p>SigAnalyzer based signature output: <ul><li><a href="Datasets/Derived/sigAnalysis/signatureInfo.driver_neutral.sigAnalyzeMatrix.txt" download>signatureInfo.driver_neutral.sigAnalyzeMatrix.txt<span class="badge badge-light">txt</span><span class="badge badge-light">12KB</span></a></p></li></ul>
+            </li>
+            </ol>  
+
+
+  </article>
+</div></article></div>
+<br><br><br>
+
+<div class="card">
+
+  <div class="card-header"><h1 id="Tools" style="padding-top: 100px; margin-top: -100px;">Tools and Source Code</h1></div>
+  <div class="card-body">
+  <p>This section lists tools and scripts used to characterize putative passengers in the PCAWG project</p>
+  <section id="services" class="clear">
+  <article class="subtitle">
+
+  </article>
+  </section>
+  <!-- article 1 -->
+  
+  <section id="services" class="clear">
+  <article class="subtitle">
+    <h3>PCAWG analyses tools</h3>
+    <ol>
+    <li><p>FunSeq2 Source Code: <a href="https://github.com/gersteinlab/FunSeq2"> Github link to FunSeq2 </a>
+    </li>
+    <li><p>ALoFT Source Code: <a href="https://github.com/gersteinlab/aloft"> Github link to ALoFT </a>
+    </li>
+    <li><p>Additive Variance Analysis Source Code: <a href="https://github.com/gersteinlab/pcawgAdditiveVariance"> Github link to additive variance analysis code </a>
+    </li>
+    <li><p>VAF and GERP Correlation Analysis:
+      <ul>
+        <li>README File: <a href="Datasets/Scripts/vafAnalysis/README_Fig4C.txt" download> README_Figure4C.txt <span class="badge badge-light">txt</span><span class="badge badge-light">4KB</span></a>
+        </li>
+        <li>RScript: <a href="Datasets/Scripts/vafAnalysis/Script_PaperE_Figure4C.R" download> Script_PaperE_Figure4C.R <span class="badge badge-light">Rscript</span><span class="badge badge-light">8KB</span></a>
+        </li>
+        </p>
+      </ul>
+    </li>
+    <li><p>Survival Analysis:
+      <ul>
+        <li>README File: <a href="Datasets/Scripts/vafAnalysis/README_Fig4D.txt" download> README_Fig4D.txt <span class="badge badge-light">txt</span><span class="badge badge-light">4KB</span></a>
+        </li>
+        <li>RScript: <a href="Datasets/Scripts/vafAnalysis/Script_PaperE_Figure4D.R" download>Script_PaperE_Figure4D.R <span class="badge badge-light">Rscript</span><span class="badge badge-light">4KB</span></a>
+        </li>
+        </p>
+      </ul>
+    </li>
+
+    <li><p>Subclonal Heterogeneity Analysis:
+      <ul>
+        <li>README File: <a href="Datasets/Scripts/vafAnalysis/README_clonalInfo.txt" download> README_clonalInfo.txt <span class="badge badge-light">txt</span></a> 
+        </li>
+        <li>Python Script: <a href="Datasets/Scripts/vafAnalysis/extractClonalInfo.py" download> extractClonalInfo.py <span class="badge badge-light">python</span><span class="badge badge-light">8KB</span></a>
+        </li>
+        </p>
+      </ul>
+    </li>
+
+    <li><p>Signature Correlation Analysis:
+      <ul>
+        <li>README file: <a href="Datasets/Scripts/sigAnalysis/README_sigDiff.txt" download> README_sigDiff.txt<span class="badge badge-light">txt</span></a>  
+        </li>
+        <li>RScript: <a href="Datasets/Scripts/sigAnalysis/extractSigDiff.py" download> extractSigDiff.py <span class="badge badge-light">python</span><span class="badge badge-light">12KB</span></a>
+        </li>
+        </p>
+      </ul>
+    </li>
+
+    </ol>
+<!--    <p>To view the enhancers in the UCSC Genome browser (opens link to Genome Browser in new tab): <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubClear=http://adult.psychencode.org/UCSChub/hub.txt" target="_blank"> PEC DLPFC enhancers (hg19) &raquo;</a> and  <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&hubClear=http://adult.psychencode.org/UCSChub/hub.txt" target="_blank"> PEC DLPFC enhancers (hg38 assembly) &raquo;</a> </p>
+-->
+  </article>
+  </section>
+ 
+</article>
+</div></div>
+<br><br><br>
+
+
+
+<!-- ******************************************************************************************************************************* -->
+<div class="card">
+      <article class="one_fourth">
+  <div class="card-header"><h1 id="Primary" style="padding-top: 100px; margin-top: -100px;">Primary Datasets</h1></div>
+  <div class="card-body">
+
+      <!-- article 2 -->
+
+
+        
+        <p>Access to all files tagged as "controlled" is login-secured. These controlled dataset used in this publication are accessible to the research community as described under <a href="https://docs.icgc.org/pcawg/data/#data-repositories" download>private data download guidleine</a></p>
+        
+          <section id="services" class="clear">
+          <article class="subtitle">
+
+          </article>
+          </section>
+
+  <section id="services" class="clear">
+  <article class="subtitle">
+    <h3>PCAWG primary datasets</h3>
+    <p> </p>
+    <ol>
+    <li><p>Mutations: <a href="https://dcc.icgc.org/releases/PCAWG/consensus_snv_indel"> Link to PCAWG mutations <span class="badge badge-danger">controlled</span></a>
+    </li>
+    <li><p>Structural Variations: <a href="https://dcc.icgc.org/releases/PCAWG/consensus_sv"> Link to PCAWG SVs <span class="badge badge-danger">controlled</span></a>
+    </li>
+    <li><p>Mutational Signatures : <a href="https://www.synapse.org/#!Synapse:syn11738306"> Link to PCAWG signatures <span class="badge badge-danger">controlled</span></a>
+    </li>
+    <li><p>Subclonal Architecture : <a href="https://dcc.icgc.org/releases/PCAWG/subclonal_reconstruction"> Link to PCAWG clonal status  <span class="badge badge-danger">controlled</span></a>
+    </li>
+    <li><p>Gene Expression Quantification : <a href="https://dcc.icgc.org/releases/PCAWG/transcriptome/gene_expression"> Link to PCAWG gene expression <span class="badge badge-danger">controlled</span></a>
+    </li>
+    <li><p>Driver Elements : <a href="https://www.biorxiv.org/highwire/filestream/73123/field_highwire_adjunct_files/0/237313-1.xlsx"> Link to PCAWG driver elements</a>
+    </li>
+    <li><p>Driver Mutations : <a href="https://dcc.icgc.org/releases/PCAWG/driver_mutations"> Link to PCAWG driver mutations <span class="badge badge-danger">controlled</span></a>
+    </li>
+
+    </ol>
+<!--    <p>To view the enhancers in the UCSC Genome browser (opens link to Genome Browser in new tab): <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubClear=http://adult.psychencode.org/UCSChub/hub.txt" target="_blank"> PEC DLPFC enhancers (hg19) &raquo;</a> and  <a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&hubClear=http://adult.psychencode.org/UCSChub/hub.txt" target="_blank"> PEC DLPFC enhancers (hg38 assembly) &raquo;</a> </p>
+-->
+  </article>
+  </section>
+
+        <!-- article 4 -->
+</div></article></div>
+<br><br><br>
+<!-- ****************************************************************************************************************************** -->
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ##########################################################################################
+    <section class="last clear">
+      <article class="two_third">
+        <h2>Lorum ipsum dolor</h2>
+        <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="http://www.os-templates.com/template-terms">website template licence</a>.</p>
+        <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more HTML5 templates visit <a href="http://www.os-templates.com/">free website templates</a>.</p>
+        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+      </article>
+      <article class="one_third lastbox">
+        <h2>Lorum ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque. Quisque non luctus sem.</p>
+        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+      </article>
+    </section>-->
+    <!-- / content body -->
+  </div>
+</div>
+<div class="card-body">
+<p id="Footnote"><sup>*</sup>All datasets are aligned to the reference genome hg19 and gencode v19, unless mentioned otherwise.
+  <br>
+  The "RefSet" tag marks datasets that were used in the primary analyses of the manuscript. </p>
+  <a href="http://resource.psychencode.org">Return to top</a>
+</div>
+<br>
+<div class="card-body">
+<h3 id="Citation" style="padding-top: 100px; margin-top: -100px;">Citation</h3>
+<p> <b>Pan-cancer analysis of whole genomes: Campbell et al, </b><i>BioRxiv</i> 2018</p>
+<a href="https://dcc.icgc.org/pcawg">Return to top</a>
+</div>
+<!-- footer
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+-->
+    <div id="footer">
+      <div class="container">
+
+      </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+</html>
